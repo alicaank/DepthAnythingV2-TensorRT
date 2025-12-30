@@ -1,0 +1,46 @@
+# Build artifacts
+/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+
+# TensorRT / ONNX artifacts (large generated files)
+/engines/
+/models/
+*.trt
+*.engine
+*.onnx
+
+# Generated results / outputs
+/comparison_results/
+depth_output.png
+
+# Local datasets
+/data/
+
+# Python cache / venv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store

@@ -1,0 +1,10 @@
+# Prevent accidental LF/CRLF issues in scripts
+*.sh text eol=lf
+
+# Treat binaries as binary
+*.trt binary
+*.engine binary
+*.onnx binary
+*.png binary
+*.jpg binary
+*.jpeg binary
