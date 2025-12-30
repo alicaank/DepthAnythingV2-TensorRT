@@ -241,6 +241,40 @@ Statistical Metrics:
 ✓ Comparison complete!
 ```
 
+### Visual Comparison Results
+
+The comparison tool generates several visualizations to help assess TensorRT accuracy:
+
+#### PyTorch vs TensorRT Depth Maps
+
+<p align="center">
+  <img src="assets/pytorch_depth.png" width="45%" alt="PyTorch Output"/>
+  <img src="assets/tensorrt_depth.png" width="45%" alt="TensorRT Output"/>
+</p>
+<p align="center">
+  <em>Left: PyTorch reference output | Right: TensorRT FP16 output</em>
+</p>
+
+#### Difference Map
+
+<p align="center">
+  <img src="assets/difference_map.png" width="60%" alt="Difference Map"/>
+</p>
+<p align="center">
+  <em>Pixel-wise difference between PyTorch and TensorRT outputs (amplified for visibility)</em>
+</p>
+
+The difference map shows that TensorRT FP16 achieves excellent consistency with PyTorch, with typical correlation >0.999 and MAE <0.1%.
+
+#### Example Output
+
+<p align="center">
+  <img src="assets/example_output.png" width="60%" alt="Example Depth Output"/>
+</p>
+<p align="center">
+  <em>Example colorized depth map from image_inference</em>
+</p>
+
 ### Benchmark (`benchmark`)
 
 **Command:**
