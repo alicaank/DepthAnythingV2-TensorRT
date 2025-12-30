@@ -1,0 +1,24 @@
+# TensorRT Python Tools Requirements
+# For ONNX export and TensorRT engine building
+
+# Core dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# ONNX export
+onnx>=1.14.0
+onnxruntime>=1.15.0
+onnx-simplifier>=0.4.0
+
+# TensorRT (install separately via NVIDIA SDK)
+# tensorrt>=8.6.0
+
+pycuda>=2022.1
+
+# Validation metrics
+scikit-image>=0.21.0
+
+# Utilities
+tqdm>=4.65.0
